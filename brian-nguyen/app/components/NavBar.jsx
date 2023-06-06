@@ -24,12 +24,13 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" className="bg-gray-600/30 ">
+    <AppBar position="fixed" color="transparent">
+      {/* Fixe color change on top here*/}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo in desktop mode */}
           <Typography
-            className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-cyan-600"
+            className="text-transparent bg-clip-text bg-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]"
             variant="h4"
             noWrap
             component="a"
