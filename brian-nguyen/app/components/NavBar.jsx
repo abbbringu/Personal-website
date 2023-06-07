@@ -109,13 +109,17 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <Button
-                className="rounded-full"
                 color="primary"
                 size="medium"
-                variant="outlined"
+                variant="contained"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  borderRadius: 28,
+                }}
               >
                 {page}
               </Button>

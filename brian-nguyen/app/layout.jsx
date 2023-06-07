@@ -17,8 +17,13 @@ export default function RootLayout({ children }) {
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
         <body>
-          <NavBar />
-          {children}
+          <div className="main">
+            <div className="gradient" />
+          </div>
+          <main className="app">
+            <NavBar />
+            {children}
+          </main>
         </body>
       </ThemeProvider>
     </html>
