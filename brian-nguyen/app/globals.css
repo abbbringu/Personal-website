@@ -2,73 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.PopoverTrigger {
+  background-color: white;
+  border-radius: 4px;
+}
 
+.PopoverContent {
+  border-radius: 4px;
+  padding: 20px;
+  width: 260px;
+  background-color: white;
+}
 
+.PopoverArrow {
+  fill: white;
+}
 
+/* START: Hero styles */
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
+}
 
-.gradient {
-    height: fit-content;
-    z-index: 3;
-    width: 100%;
-    max-width: 640px;
-    background-image: radial-gradient(
-        at 27% 37%,
-        hsla(215, 98%, 61%, 1) 0px,
-        transparent 0%
-      ),
-      radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-      radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%),
-      radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-      radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-      radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-      radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%);
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    filter: blur(100px) saturate(150%);
-    top: 80px;
-    opacity: 0.2;
-  }
+.hero__title {
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+}
 
-  .main {
-    width: 100vw;
-    min-height: 100vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    padding: 120px 24px 160px 24px;
-    pointer-events: none;
-  }
-  
-  .main:before {
-    background: radial-gradient(circle, rgba(32, 49, 72, 0.6) 0, #323646 100%);
-    /* background: linear-gradient(50deg, rgba(13,24,42,0.5) 0%, rgba(9,9,121,0.5) 37%, rgba(78, 26, 98, 0.5) 100%); */
-    position: absolute;
-    content: "";
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    top: 0;
-  }
-  
-  .main:after {
-    content: "";
-    background-image: url("/images/grid.svg");
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0.7;
-    filter: invert(1);
-  }
+.hero__subtitle {
+  @apply text-[20px] text-black font-light mt-5;
+}
 
-  .app {
-    @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6;
-  }
-  .blue_gradient {
-    @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
-  }
+.hero__image-container {
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
+}
+
+.hero__image {
+  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+}
+
+.hero__image-overlay {
+  @apply absolute xl:-top-12 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-indigo-400 inline-block text-transparent bg-clip-text;
+}
+/* END: Hero styles */
