@@ -4,7 +4,9 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="flex-1 pt-36 mx-5">
-        <h1 className="hero__title">Hej! Trevligt Att Träffas 👋</h1>
+        <h1 className="hero__title">
+          Hej! Trevligt Att Träffas <span className="waving-hand">👋</span>
+        </h1>
 
         <p className="hero__subtitle">
           Jag heter <span className="font-bold blue_gradient">Brian</span> och

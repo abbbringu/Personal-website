@@ -68,3 +68,30 @@ export const experience = [
     image: "/abbC.jfif",
   },
 ];
+
+export const highlightProject = [
+  {
+    title: "Personal website",
+    tag: ["NextJS", "React", "TailwindCS"],
+    desc: "bla bla ",
+    gitLink: "idk",
+    demo: "link",
+    thumbnail: "/projects/project_personal-web.jpg",
+  },
+  {
+    title: "Advent of Code",
+    tag: ["Python"],
+    desc: "bla bla ",
+    gitLink: "idk",
+    demo: "link",
+    thumbnail: "/next.svg",
+  },
+  {
+    title: "Webscraper for task automation",
+    tag: ["Python", "Selenium"],
+    desc: "bla bla ",
+    gitLink: "idk",
+    demo: "",
+    thumbnail: "/github.svg",
+  },
+];

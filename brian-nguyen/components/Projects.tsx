@@ -1,14 +1,23 @@
-import React from "react";
+import Image from "next/image";
+import ProjectCard from "./ProjectCard";
+import { highlightProject } from "@/const";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-start bg-sky-300">
+    <div className="flex flex-col items-star container gap-5">
       <div className="w-full">
         <p className="sub__title border-b-2 text-center">Projekt</p>
       </div>
-      <div className="flex flex-row justify-between">
-        <h1>This is a test asdf asdfas df sd fas df sdf s dfs df s</h1>
-      </div>
+      {highlightProject.map((card) => (
+        <ProjectCard
+          title={card.title}
+          desc={card.desc}
+          tag={card.tag}
+          gitLink={card.gitLink}
+          demo={card.demo}
+          image={card.thumbnail}
+        />
+      ))}
     </div>
   );
 };
