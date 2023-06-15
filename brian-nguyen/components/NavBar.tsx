@@ -21,7 +21,7 @@ const NavBar = () => {
             target="_blank"
           >
             <p>
-              <span className="hidden sm:inline-block">Visa</span> CV{" "}
+              <span className="hidden sm:inline-block">Visa</span> CV
             </p>
           </a>
           <Link
