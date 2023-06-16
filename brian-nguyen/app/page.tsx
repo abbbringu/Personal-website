@@ -6,11 +6,10 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center pt-24 overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center gap-y-10 pt-24 overflow-x-hidden">
       <Hero />
-      <Projects />
       <Education />
-      <PopoverDemo />
+      <Projects />
     </main>
   );
 }
