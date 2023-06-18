@@ -48,7 +48,7 @@ const ProjectCard = ({
           {demo ? (
             <a
               className=" flex max-w-fit items-center justify-center space-x-2 rounded-full border-gray-300 bg-black px-5 py-2 text-md text-gray-600 shadow-md transition-colors hover:border-blue-700 border-2"
-              href="https://github.com/steven-tey/precedent"
+              href={demo}
               target="_blank"
             >
               <p className="text-white">Demo</p>
