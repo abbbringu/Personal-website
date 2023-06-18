@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const NavBar = () => {
+  const router = useRouter();
   return (
     <header className="w-full  absolute z-10">
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-4 py-4 bg-transparent">
@@ -13,7 +16,7 @@ const NavBar = () => {
         <div className="items-center flex justify-center gap-2 pr-5">
           <a
             className="animate-pulse hover:animate-none flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-md text-gray-600 shadow-md transition-colors hover:border-gray-800"
-            href="https://github.com/steven-tey/precedent"
+            href="/Education/BrianNguyenCV.pdf"
             target="_blank"
           >
             <p>
@@ -25,7 +28,7 @@ const NavBar = () => {
             target="_blank"
           >
             <Image
-              src="/linkedin.svg"
+              src="/Navbar/linkedin.svg"
               alt="logo"
               width={40}
               height={40}
@@ -35,13 +38,25 @@ const NavBar = () => {
 
           <Link href="https://github.com/abbbringu" target="_blank">
             <Image
-              src="/github.svg"
+              src="/Navbar/github.svg"
               alt="logo"
-              width={40}
               height={40}
+              width={40}
               className="object-contain"
             />
           </Link>
+          <div
+            onClick={() => router.push("mailto:brianphi.nguyen@gmail.com")}
+            className="cursor-pointer"
+          >
+            <Image
+              src="/Navbar/mail.svg"
+              alt="logo"
+              height={40}
+              width={40}
+              className="object-contain"
+            />
+          </div>
         </div>
       </nav>
     </header>

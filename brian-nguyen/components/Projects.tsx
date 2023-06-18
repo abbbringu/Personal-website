@@ -4,7 +4,7 @@ import { highlightProject } from "@/const";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-star container gap-5">
+    <div id="projects" className="flex flex-col items-star container gap-5">
       <div className="w-full">
         <p className="sub__title border-b-2 text-center">Projekt</p>
       </div>

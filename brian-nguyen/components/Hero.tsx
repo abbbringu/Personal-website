@@ -1,14 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <div className="hero">
       <div className="flex-1 pt-36 mx-5">
-        <h1 className="hero__title">
+        <h1 className="hero__title animate-fade-up">
           Hej! Trevligt Att Träffas <span className="waving-hand">👋</span>
         </h1>
 
-        <p className="hero__subtitle">
+        <p className="hero__subtitle animate-fade-up">
           Jag heter <span className="font-bold blue_gradient">Brian</span> och
           jag är en <span className="font-bold blue_gradient">datateknik</span>{" "}
           student på{" "}
@@ -23,11 +25,9 @@ const Hero = () => {
           <span className="font-bold blue_gradient">Next.js</span>. Har dessutom
           programmerat i Python, JavaScript, C#, C++ och Java.
         </p>
-
         <a
           className=" mt-5 flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-md text-gray-600 shadow-md transition-colors hover:border-gray-800"
-          href="https://github.com/steven-tey/precedent"
-          target="_blank"
+          href={"#education"}
         >
           <p className="font-semibold">Mer info</p>
         </a>
@@ -40,7 +40,7 @@ const Hero = () => {
               alt="hero"
               width={512}
               height={512}
-              className="object-contain rounded-full drop-shadow-xl"
+              className="object-contain rounded-full drop-shadow-xl animate-fade-up"
             />
           </div>
         </div>

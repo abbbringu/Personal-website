@@ -35,7 +35,7 @@ const ProjectCard = ({
             <></>
           )}
         </div>
-        <div>{desc}</div>
+        <div className="text-md">{desc}</div>
         {/* Buttons for refference */}
         <div className="flex flex-row gap-3">
           <a
