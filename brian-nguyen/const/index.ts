@@ -36,19 +36,19 @@ export const education = [
 
 export const experience = [
   {
-    title: "Fullstack utvecklare",
-    degree: "Uvumi · Deltid",
+    title: "Software developer",
+    degree: "Självständig · Deltid",
     from: "Jun 2023",
     to: "Sep 2023",
-    link: "https://www.mdu.se/",
-    image: "/Education/malardalens.jfif",
+    link: "https://www.linkedin.com/in/brian-nguyen-data/",
+    image: "/Experience/grey-person-icon.png",
   },
   {
     title: "UI / UX Designer",
     degree: "Capacio · Student assistent",
     from: "Aug 2021",
     to: "Aug 2021",
-    link: "https://www.abbgymnasiet.se/",
+    link: "https://www.linkedin.com/company/capacio/",
     image: "/Experience/capacio.jfif",
   },
   {
@@ -56,7 +56,7 @@ export const experience = [
     degree: "Sommarjobb",
     from: "Aug 2021",
     to: "Jun 2026",
-    link: "https://www.chalmers.se/",
+    link: "https://www.linkedin.com/company/abb/",
     image: "/Experience/abbC.jfif",
   },
   {
@@ -64,7 +64,7 @@ export const experience = [
     degree: "Sommarjobb",
     from: "Jun 2019",
     to: "Aug 2019",
-    link: "https://www.bth.se/eng/",
+    link: "https://www.linkedin.com/company/abb/",
     image: "/Experience/abbC.jfif",
   },
 ];
@@ -75,8 +75,8 @@ export const highlightProject = [
     tag: ["NextJS", "React", "TailwindCS"],
     desc: "This project is a personal website developed using Next.js 13, React, and Tailwind CSS. It provides individuals with a modern platform to showcase their information, portfolio, and more. The website offers a fast and dynamic user experience through Next.js, utilizes React for efficient component management, and applies Tailwind CSS for responsive and customizable styling. The project combines cutting-edge technologies to create an attractive and user-friendly personal website.",
     gitLink: "https://github.com/abbbringu/Personal-website",
-    demo: "link",
-    thumbnail: "/projects/project_personal-web.jpg",
+    demo: "https://personal-website-gules-rho.vercel.app/",
+    thumbnail: "/projects/project_personal-web.JPG",
   },
   {
     title: "Advent of Code",
