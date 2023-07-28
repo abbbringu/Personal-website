@@ -18,9 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("bg-gray-800", inter.className)}>
+      <body className={cn("bg-gray-800 overflow-x-hidden", inter.className)}>
         <Navbar />
         {children}
+        <div className="h -30 w-full overflow-x-hidden"></div>
       </body>
     </html>
   );
