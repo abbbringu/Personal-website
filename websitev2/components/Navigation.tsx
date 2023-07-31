@@ -15,39 +15,35 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
+    title: "Education",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    description: "About high school, university and other relevant information",
   },
   {
-    title: "Hover Card",
+    title: "Experience",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    description: "See previous work experiences. Summer work and freelance",
   },
   {
-    title: "Progress",
+    title: "Certification",
     href: "/docs/primitives/progress",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Online certifications I've been taking. Mostly from Coursera.",
   },
   {
-    title: "Scroll-area",
+    title: "My work",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    description: "Showcase my proudest projects related to coding.",
   },
   {
-    title: "Tabs",
+    title: "Find me online",
     href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    description: "LinkedIn, Github and Number, you'll find me here.",
   },
   {
-    title: "Tooltip",
+    title: "Contact",
     href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    description: "How can I help you? Get in touch and we'll set up a date",
   },
 ];
 
@@ -56,9 +52,16 @@ const Navigation = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Home
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
+            <ul className="grid gap-3 p-6 w-[250px] md:w-[400px] sm:w-[350px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
@@ -66,7 +69,7 @@ const Navigation = () => {
                     href="/"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      View Projects
+                      View All Projects
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       All my projects from my 5 years of coding experience.
@@ -74,22 +77,25 @@ const Navigation = () => {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/docs" title="Web Development">
+                View all my frontend / fullstack projects.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/docs/installation" title="Python">
+                Everything from automation bots to problem solving with python.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem
+                href="/docs/primitives/typography"
+                title="University Work"
+              >
+                Projects made in conjunction with courses. Java, Erland, c etc
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Find</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[350px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[250px] sm:w-[350px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -101,13 +107,6 @@ const Navigation = () => {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
