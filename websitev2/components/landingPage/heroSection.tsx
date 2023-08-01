@@ -9,7 +9,7 @@ const HeroSecion = () => {
         {/* Text area */}
         <div className="space-y-3">
           <h1>
-            Hello I'm Brian. <br /> I am ........
+            Hello I am Brian. <br /> I am ........
           </h1>
           <p>
             Lorem ipsum is the best thing I have always seem to find some excuse
