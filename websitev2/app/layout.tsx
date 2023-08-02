@@ -9,6 +9,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Brian Nguyen",
   description: "Personal website for showcasing portfolio",
+  openGraph: {
+    title: "Brian Nguyen",
+    description: "My personal website for showcasing portfolio",
+    url: "https://garlicginger.se",
+    siteName: "garlicginger.se",
+    locale: "en-SV",
+    type: "website",
+  },
+  icons: {
+    shortcut: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

@@ -51,12 +51,12 @@ const GroupCard: React.FC<groupCardProps> = ({ cards = [] }) => {
             <div className="card relative group">
               <div className="card-content">
                 <div className="flex gap-3 items-start">
-                  <div className="rounded-full relative w-12 h-12 bg-white overflow-hidden">
+                  <div className="rounded-full relative w-11 h-10 bg-zinc-700 overflow-hidden">
                     <Image
                       src={card.imageUrl}
                       alt="Image on certification"
                       fill
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: "fill" }}
                     />
                   </div>
                   <div>

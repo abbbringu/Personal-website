@@ -10,6 +10,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "logowik.com",
       },
+      {
+        protocol: "https",
+        hostname: "d3njjcbhbojbot.cloudfront.net",
+      },
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+      },
     ],
   },
 };

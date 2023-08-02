@@ -93,6 +93,7 @@ p {
 
 #cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
   max-width: 916px;
@@ -171,7 +172,7 @@ p {
 
   .card {
     flex-shrink: 1;
-    width: calc(50% - 4px);
+    /* width: calc(50% - 4px); */
   }
 }
 
