@@ -47,14 +47,7 @@ const page = () => {
             subtitle: "Coursera - Meta",
             imageUrl: "next.svg",
             certificateUrl:
-              "https://www.coursera.org/account/accomplishments/certificate/ZBSWACGUPZMX",
-          },
-          {
-            title: "Eric is big dumb smort",
-            subtitle: "Coursera - Meta",
-            imageUrl: "vercel.svg",
-            certificateUrl:
-              "https://www.coursera.org/account/accomplishments/certificate/ZBSWACGUPZMX",
+              "https://www.coursera.org/account/accomplishments/certificate/ZBSWACGUasfPZMX",
           },
         ]}
       />
