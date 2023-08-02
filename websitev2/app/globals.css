@@ -188,3 +188,36 @@ p {
     height: 180px;
   }
 }
+
+#blob {
+  background-color: white;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(235, 67, 241), rgb(16, 91, 197));
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(5vmax);
+}
