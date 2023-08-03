@@ -56,7 +56,7 @@ const GroupCard: React.FC<groupCardProps> = ({ cards = [] }) => {
                     />
                   </div>
                   <div>
-                    <h3>{card.title}</h3>
+                    <h4>{card.title}</h4>
                     <h4 className="text-sm text-slate-400">{card.subtitle}</h4>
                   </div>
                 </div>

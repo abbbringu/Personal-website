@@ -18,8 +18,8 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-
-    --primary: 222.2 47.4% 11.2%;
+    /* 312, 92%, 61% */
+    --primary: 310 90% 40%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -82,8 +82,15 @@ h1 {
   @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
 }
 
+h2 {
+  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+}
+h3 {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
 p {
-  @apply leading-7 [&:not(:first-child)]:mt-6;
+  @apply leading-7 [&:not(:first-child)]:mt-3;
 }
 
 /* New thing here */
@@ -214,6 +221,6 @@ p {
   }
 }
 
-#blur {
+.blur {
   backdrop-filter: blur(5vmax);
 }

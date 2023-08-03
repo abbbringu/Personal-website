@@ -3,6 +3,7 @@ import HeroSecion from "@/components/landingPage/heroSection";
 import Education from "@/components/landingPage/education";
 import Experience from "@/components/landingPage/experience";
 import Certifications from "@/components/landingPage/certifications";
+import WorkShowcase from "@/components/landingPage/myWork";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
         </div>
       </div>
       <Certifications />
+      <WorkShowcase />
     </div>
   );
 };
