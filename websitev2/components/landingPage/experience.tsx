@@ -27,7 +27,7 @@ const ExperienceCard = [
 
 const Experience = () => {
   return (
-    <div className=" xl:text-black text-white w-full">
+    <div id="experience" className=" xl:text-black text-white w-full">
       <Feed title="Experience" cards={ExperienceCard} />
     </div>
   );

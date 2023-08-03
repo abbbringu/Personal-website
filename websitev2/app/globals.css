@@ -71,6 +71,7 @@
 @layer base {
   * {
     @apply border-border;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-white;
@@ -190,8 +191,6 @@ p {
 }
 
 #blob {
-  background-color: white;
-  aspect-ratio: 1;
   left: 50%;
   top: 50%;
   translate: -50% -50%;
@@ -207,7 +206,7 @@ p {
   }
 
   50% {
-    scale: 1 1.5;
+    scale: 1 1.7;
   }
 
   to {
@@ -216,8 +215,5 @@ p {
 }
 
 #blur {
-  height: 100%;
-  width: 100%;
-  position: absolute;
   backdrop-filter: blur(5vmax);
 }

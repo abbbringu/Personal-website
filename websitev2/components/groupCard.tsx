@@ -36,10 +36,6 @@ const GroupCard: React.FC<groupCardProps> = ({ cards = [] }) => {
       className="flex flex-col items-center gap-5 p-5 justify-center"
       onMouseMove={() => handleMove()}
     >
-      <header className="text-center">
-        <h1>Certificates</h1>
-        <h3 className="text-gray-300">(Click to see certificate)</h3>
-      </header>
       <div id="cards">
         {cards.map((card) => (
           <Link

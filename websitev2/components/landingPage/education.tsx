@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Education() {
   return (
-    <div className="max-w-6xl w-full">
+    <div className="max-w-6xl w-full" id="education">
       {/*<!-- Component: User feed --> */}
       <div className="text-center">
         <h1>Education</h1>

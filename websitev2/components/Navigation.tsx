@@ -16,33 +16,33 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Education",
-    href: "/docs/primitives/alert-dialog",
+    href: "/#education",
     description: "About high school, university and other relevant information",
   },
   {
     title: "Experience",
-    href: "/docs/primitives/hover-card",
+    href: "/#experience",
     description: "See previous work experiences. Summer work and freelance",
   },
   {
     title: "Certification",
-    href: "/docs/primitives/progress",
+    href: "/#certification",
     description:
       "Online certifications I've been taking. Mostly from Coursera.",
   },
   {
     title: "My work",
-    href: "/docs/primitives/scroll-area",
+    href: "/#myWork",
     description: "Showcase my proudest projects related to coding.",
   },
   {
     title: "Find me online",
-    href: "/docs/primitives/tabs",
+    href: "/#findMeOnline",
     description: "LinkedIn, Github and Number, you'll find me here.",
   },
   {
     title: "Contact",
-    href: "/docs/primitives/tooltip",
+    href: "/#contact",
     description: "How can I help you? Get in touch and we'll set up a date",
   },
 ];

@@ -44,17 +44,19 @@ const HeroSecion = () => {
 
   return (
     <div
-      className="w-full h-[60vh] md:h-[100vh] flex justify-center"
+      className="w-full  md:h-[90vh] flex justify-center"
       onMouseMove={(ev) => handleMove(ev)}
     >
       <div
         className="w-[400px] h-[300px] absolute hidden md:flex -z-20"
         id="blob"
       ></div>
-      <div id="blur" className="w-full h-full hidden md:flex -z-10"></div>
+      <div
+        id="blur"
+        className="w-full h-full absolute hidden md:flex -z-10"
+      ></div>
 
       <div className="max-w-7xl flex flex-col md:flex-row md:justify-center items-center gap-5 p-5">
-        <div className="md:flex absolute bottom-8 hidden ">Dropdown</div>
         {/* Text area */}
         <div className="text-center flex flex-col justify-between md:text-start space-y-3 w-full basis-1/2">
           <h1>
@@ -68,14 +70,10 @@ const HeroSecion = () => {
             </span>
           </h1>
           <p>
-            Jag heter Brian och jag är en datateknik student på Chalmers
-            Tekniska Högskola. Jag har programmerat sedan gymnasiet och skapat
-            IoT-enheter och applikationer. Jag fortsatt med programmering och
-            lärt mig olika koncept som funktionell programmering,
-            objektorienterad programmering, datastrukturer, parallell
-            programmering osv. För tillfället lär jag mig fullstack-utveckling
-            med Next.js. Har dessutom programmerat i Python, JavaScript, C#, C++
-            och Java.{" "}
+            I am currently enrolled on my 3rd year at Chalmers as a CS-student.
+            I have been programming since high school (5 years), developed
+            IoT-products and software. In my free time, I help small companies
+            establish their online presence.
           </p>
           {/* Button group */}
           <div className="flex justify-center md:justify-normal items-center gap-3">
