@@ -36,9 +36,9 @@ const components: { title: string; href: string; description: string }[] = [
     description: "Showcase my proudest projects related to coding.",
   },
   {
-    title: "Find me online",
-    href: "/#findMeOnline",
-    description: "LinkedIn, Github and Number, you'll find me here.",
+    title: "View CV",
+    href: "/#cv",
+    description: "View my most up to date CV, either in browser or download",
   },
   {
     title: "Contact",

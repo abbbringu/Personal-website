@@ -4,19 +4,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "yt3.googleusercontent.com",
-      },
-      {
-        protocol: "https",
-        hostname: "logowik.com",
-      },
-      {
-        protocol: "https",
-        hostname: "d3njjcbhbojbot.cloudfront.net",
-      },
-      {
-        protocol: "https",
-        hostname: "media.licdn.com",
+        hostname: "**",
+        port: "",
+        pathname: "**",
       },
     ],
   },

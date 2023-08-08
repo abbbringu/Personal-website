@@ -76,7 +76,7 @@ const HeroSecion = () => {
           </p>
           {/* Button group */}
           <div className="flex justify-center md:justify-normal items-center gap-3">
-            <Link href="/#education">
+            <Link href="/#cv">
               <Button>See CV</Button>
             </Link>
             <Button type="button" variant="secondary">

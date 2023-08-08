@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowUpRightFromCircleIcon, InfoIcon } from "lucide-react";
+import Link from "next/link";
 
 interface projectCardProp {
   title: string;
@@ -32,17 +33,21 @@ const ProjectCard: React.FC<projectCardProp> = ({
       <div className="p-3 flex flex-col w-full h-full ">
         <div className=" absolute bottom-5 right-5 text-black">
           {demo ? (
-            <Button variant="default" size="sm" className="mr-3">
-              Demo
-              <ArrowUpRightFromCircleIcon className="w-4 h-4 ml-2 group-hover:ml-3 group-hover:scale-110 transition-all" />
-            </Button>
+            <Link href={demo} target="_blank">
+              <Button variant="default" size="sm" className="mr-3">
+                Demo
+                <ArrowUpRightFromCircleIcon className="w-4 h-4 ml-2 group-hover:ml-3 group-hover:scale-110 transition-all" />
+              </Button>
+            </Link>
           ) : (
             <></>
           )}
-          <Button variant="outline" size="sm">
-            Info
-            <InfoIcon className="w-4 h-4 ml-2 group-hover:ml-3 group-hover:scale-110 transition-all" />
-          </Button>
+          <Link href={info} target="_blank">
+            <Button variant="outline" size="sm">
+              Info
+              <InfoIcon className="w-4 h-4 ml-2 group-hover:ml-3 group-hover:scale-110 transition-all" />
+            </Button>
+          </Link>
         </div>
         <div>
           <h3>{title}</h3>
