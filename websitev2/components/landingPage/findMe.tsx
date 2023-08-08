@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "../ui/button";
+import { DownloadIcon } from "lucide-react";
 
 const CV = () => {
   return (
@@ -16,13 +17,19 @@ const CV = () => {
         <div className="text-center">
           <h1>CV</h1>
         </div>
-        <Button>Download CV</Button>
+        <Button>
+          Download
+          <DownloadIcon className="ml-3 w-5 h-5x" />
+        </Button>
 
         <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
+          <AccordionItem
+            value="item-1"
+            className="w-[90vw] md:w-[70vw] lg:w-[60vw]"
+          >
             <AccordionTrigger>View CV</AccordionTrigger>
             <AccordionContent>
-              <div className="w-[90vw] h-[80vh] bg-emerald-400">
+              <div className="w-[90vw] md:w-[70vw] lg:w-[60vw] h-[80vh]">
                 <object
                   data="BrianNguyenCV.pdf"
                   type="application/pdf"
