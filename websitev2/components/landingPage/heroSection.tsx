@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const textRotating = [
   "CS Student",
@@ -77,7 +78,7 @@ const HeroSecion = () => {
           {/* Button group */}
           <div className="flex justify-center md:justify-normal items-center gap-3">
             <Link href="/#cv">
-              <Button>See CV</Button>
+              <Button>View CV</Button>
             </Link>
             <Button type="button" variant="secondary">
               Contact Me
@@ -86,7 +87,15 @@ const HeroSecion = () => {
         </div>
         {/* Image area */}
         <div className="hidden md:flex">
-          <div className="w-[300px] h-[300px] bg-slate-500 rounded-full"></div>
+          <div className="w-[300px] h-[300px]  rounded-full overflow-hidden relative">
+            <Image
+              fill
+              className="grayscale"
+              src="https://cdn.discordapp.com/attachments/945421661577044051/1138563869292363856/ezgif.com-webp-to-jpg.jpg"
+              objectFit="cover"
+              alt="profile picture"
+            />
+          </div>
         </div>
       </div>
     </div>

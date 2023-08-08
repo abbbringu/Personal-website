@@ -49,9 +49,9 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Navigation = () => {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="">
       <NavigationMenuList>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="pr-10 md:pr-0">
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
@@ -61,7 +61,7 @@ const Navigation = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 w-[250px] md:w-[400px] sm:w-[350px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
+            <ul className="grid gap-3 p-6 w-[290px] md:w-[500px] sm:w-[400px] lg:grid-cols-[.75fr_1fr] ">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
@@ -92,10 +92,10 @@ const Navigation = () => {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="pl-5 md:pl-0">
           <NavigationMenuTrigger>Find</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[250px] sm:w-[350px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[280px] sm:w-[380px] gap-3 p-4 md:w-[510px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
