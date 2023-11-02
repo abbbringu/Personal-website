@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import ProjectCard from "@/components/projectCard";
+import { useParams } from "next/navigation";
 import {
 	Tabs,
 	TabsContent,
@@ -10,13 +11,20 @@ import {
 } from "@/components/ui/tabs";
 
 import { projects } from "@/lib/consts";
+import { Button } from "@/components/ui/button";
 
-const Projects = ({ params }: any) => {
+const Projects = () => {
 	const changeValue = useRef(null);
 	const [defaultValue, setDefaultValue] = useState("all");
+	const params = useParams();
 	useEffect(() => {
-		console.log("changed to something %s", changeValue?.current.value);
+		console.log(params.type);
+		setDefaultValue(params.type as string);
 	}, [params.type]);
+
+	const handleClick = () => {
+		setDefaultValue("python");
+	};
 
 	return (
 		<div className="flex justify-center p-5">
@@ -26,7 +34,7 @@ const Projects = ({ params }: any) => {
 					<div className="max-w-6xl h-full w-full flex-col flex p-5 gap-3">
 						<Tabs defaultValue={defaultValue} className="w-full">
 							<div className="flex justify-center p-3">
-								<TabsList ref={changeValue}>
+								<TabsList>
 									<TabsTrigger value="all">All</TabsTrigger>
 									<TabsTrigger value="webdev">Web Dev</TabsTrigger>
 									<TabsTrigger value="python">Python</TabsTrigger>
