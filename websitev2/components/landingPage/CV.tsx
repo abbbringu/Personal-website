@@ -17,7 +17,7 @@ const CV = () => {
 				<div className="text-center">
 					<h1>CV</h1>
 				</div>
-				<Link href="BrianNguyenCV.pdf">
+				<Link href="BrianNguyenCV.pdf" target="_blank">
 					<Button>
 						Download
 						<DownloadIcon className="ml-3 w-5 h-5x" />

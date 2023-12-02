@@ -46,7 +46,7 @@ const components: { title: string; href: string; description: string }[] =
 		},
 		{
 			title: "Contact",
-			href: "/#contact",
+			href: "/#contacts",
 			description:
 				"How can I help you? Get in touch and we'll set up a date",
 		},
@@ -64,7 +64,7 @@ const Navigation = () => {
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+					<NavigationMenuTrigger>More</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid gap-3 p-6 w-[290px] md:w-[500px] sm:w-[400px] lg:grid-cols-[.75fr_1fr] ">
 							<li className="row-span-3">
@@ -82,16 +82,19 @@ const Navigation = () => {
 									</a>
 								</NavigationMenuLink>
 							</li>
-							<ListItem href="/projects/webdev" title="Web Development">
-								View all my frontend / fullstack projects.
+							<ListItem
+								target="_blank"
+								href="https://www.linkedin.com/in/brian-nguyen-data/"
+								title="LinkedIn"
+							>
+								Find and view my LinkedIn profile.
 							</ListItem>
-							<ListItem href="/projects/python" title="Python">
-								Everything from automation bots to problem solving with
-								python.
-							</ListItem>
-							<ListItem href="/projects/uniwork" title="University Work">
-								Projects made in conjunction with courses. Java, Erland, c
-								etc
+							<ListItem
+								target="_blank"
+								href="https://github.com/abbbringu"
+								title="Github"
+							>
+								Find projects and source-code in my github.
 							</ListItem>
 						</ul>
 					</NavigationMenuContent>

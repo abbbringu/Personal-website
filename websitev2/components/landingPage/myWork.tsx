@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import ProjectCard from "../projectCard";
+import Link from "next/link";
 import {
 	Tabs,
 	TabsContent,
@@ -76,9 +77,11 @@ const Certifications = () => {
 
 				{/* More project card */}
 				<div className="flex justify-center">
-					<Button size="lg" variant="outline">
-						<h3>Vew More Projects</h3>
-					</Button>
+					<Link href="/projects/all">
+						<Button size="lg" variant="outline">
+							<h3>Vew More Projects</h3>
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

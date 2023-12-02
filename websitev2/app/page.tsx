@@ -5,6 +5,7 @@ import Experience from "@/components/landingPage/experience";
 import Certifications from "@/components/landingPage/certifications";
 import WorkShowcase from "@/components/landingPage/myWork";
 import CV from "@/components/landingPage/CV";
+import Contacts from "@/components/landingPage/contacts";
 
 const page = () => {
 	return (
@@ -23,6 +24,7 @@ const page = () => {
 			<div className="flex-1 min-h-[250px] ">
 				<CV />
 			</div>
+			<Contacts />
 		</div>
 	);
 };

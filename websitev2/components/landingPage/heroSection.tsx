@@ -71,18 +71,20 @@ const HeroSecion = () => {
 					</h1>
 					<p>
 						I am currently enrolled on my 3rd year at Chalmers as a
-						CS-student. I have been programming since high school (5
+						CSE-student. I have been programming since high school (5
 						years), developed IoT-products and software. In my free time, I
-						help small companies establish their online presence.
+						like to learn and play games.
 					</p>
 					{/* Button group */}
 					<div className="flex justify-center md:justify-normal items-center gap-3">
 						<Link href="/#cv">
 							<Button>View CV</Button>
 						</Link>
-						<Button type="button" variant="secondary">
-							Contact Me
-						</Button>
+						<Link href={"/#contacts"}>
+							<Button type="button" variant="secondary">
+								Contact Me
+							</Button>
+						</Link>
 					</div>
 				</div>
 				{/* Image area */}

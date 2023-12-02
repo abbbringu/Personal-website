@@ -38,13 +38,13 @@ const Certifications = () => {
 						certificateUrl:
 							"https://freecodecamp.org/certification/fccf6334585-b9db-465a-8da3-07fa25b0557a/scientific-computing-with-python-v7",
 					},
-					{
-						title: "Meta certification on frontend",
-						subtitle: "Coursera - Meta",
-						imageUrl: "next.svg",
-						certificateUrl:
-							"https://www.coursera.org/account/accomplishments/certificate/ZBSWACGUasfPZMX",
-					},
+					// {
+					// 	title: "Meta certification on frontend",
+					// 	subtitle: "Coursera - Meta",
+					// 	imageUrl: "next.svg",
+					// 	certificateUrl:
+					// 		"https://www.coursera.org/account/accomplishments/certificate/ZBSWACGUasfPZMX",
+					// },
 				]}
 			/>
 		</div>
